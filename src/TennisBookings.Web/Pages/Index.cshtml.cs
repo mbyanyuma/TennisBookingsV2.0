@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using TennisBookings.Web.Configuration;
