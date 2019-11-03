@@ -35,6 +35,8 @@ namespace TennisBookings.Web.Services
         public string[] Greetings { get; }
 
         public string[] LoginGreetings { get; }
+
+        public string GreetingColor => _greetingConfiguration.GreetingColor;
                 
 
         public string GetRandomGreeting()

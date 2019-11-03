@@ -19,7 +19,7 @@ namespace TennisBookings.Web.Pages
             _homePageConfiguration = options.Value;
             _weatherForecaster = weatherForecaster;
 
-            //GreetingColor= _greetingService configuration
+            GreetingColor = _greetingService.GreetingColor ?? "black";
         }
 
         public string Greeting { get; private set; }
