@@ -18,10 +18,13 @@ namespace TennisBookings.Web.Pages
             _greetingService = greetingService;
             _homePageConfiguration = options.Value;
             _weatherForecaster = weatherForecaster;
+
+            GreetingColor = _greetingService.GreetingColor ?? "black";
         }
 
         public string Greeting { get; private set; }
         public bool ShowGreeting => !string.IsNullOrEmpty(Greeting);
+        public string GreetingColor { get; private set; }
         public string ForecastSectionTitle { get; private set; }
         public string WeatherDescription { get; private set; }
         public bool ShowWeatherForecast { get; private set; }
