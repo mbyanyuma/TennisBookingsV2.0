@@ -6,6 +6,6 @@
 
         string GetRandomLoginGreeting(string name);
 
-        //string GreetingColor
+        string GreetingColor { get; }
     }
 }
